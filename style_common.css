@@ -1,0 +1,98 @@
+body{
+    font-family: "Raleway";
+    margin:0px;
+}
+
+header, footer{
+    color: #2E4D7C;
+}
+
+header {
+    display: flex;
+    background: #A0C2CD;
+    height: 53px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+    margin-right: 9px;
+}
+.company-name{
+    font-size: 25px;
+    margin-right: 122px;
+}
+.header-links{
+    display: flex;
+}
+
+.header-links>a{
+    margin-right: 23px;
+}
+.header-cart{
+    margin-left: auto;
+}
+
+
+
+/*-------------------------------------footer-------------------------------------*/
+
+footer{
+    background: #A0C2CD;
+    padding-top: 90px;
+    padding-bottom: 56px;
+    color: #4E6A8F;
+}
+.ftr-line{
+    height: 1px;
+    background: #4E6A8F;
+    margin-bottom: 42px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-wrapper>div{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer>div{
+
+}
+
+@media (min-width: 1200px) {
+    body>*{
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .ftr-line{
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+    body>*{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 750px) {
+    body>*{
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+}
+@media (max-width:750px) {
+    body>*{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

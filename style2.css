@@ -1,0 +1,125 @@
+
+
+.wrapper{
+    display: grid;
+    margin-top: 54px;
+    margin-bottom: 54px;
+}
+/*-------------------------------------wrapper-------------------------------------*/
+.page-image{
+    /*height: 544px;*/
+
+
+
+    /*background-image: url("Images/Plants/monstera_variant_medium_acadia_black_768x.webp");*/
+
+    /*background-position: center ;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+
+}
+.page-image>img{
+    max-width: 100%;
+    height: auto;
+}
+
+.page-text{
+    background: #FCFCFC;
+}
+
+.add-to-cart{
+    background: #B0DF77;
+    height: 47px;
+    width: 187px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+    font-size: 20px;
+}
+
+.page-text-info{
+    display: grid;
+}
+
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.price{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.description-name{
+    font-size: 18px;
+}
+.description-text{
+    font-size: 18px;
+}
+
+
+
+/*-------------------------------------media-------------------------------------*/
+@media (min-width:1024px ) {
+    .wrapper{
+        grid-gap: 32px;
+        grid-template-columns: 76fr 100fr;
+    }
+    .page-text-info{
+        grid-template-columns: 1fr 2fr;
+    }
+    .page-text-info{
+        grid-gap: 15px;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 750px) {
+    .wrapper{
+        grid-gap: 32px;
+        grid-template-columns: 22fr 25fr;
+    }
+    .page-text-info{
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+    .description-name{
+        margin-bottom: 0px;
+     }
+    .description-text{
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+}
+@media (max-width:750px) {
+    .wrapper{
+        grid-gap: 14px;
+        grid-template-columns: 1fr;
+    }
+    .page-text-info{
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+    .description-name{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .description-text{
+        font-size: 14px;
+        margin-bottom: 21px;
+    }
+    .add-to-cart {
+        width: 100%;
+    }
+
+}
+
+
+
+
+

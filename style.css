@@ -1,0 +1,351 @@
+
+/*-------------------------------------greeting-top-block-------------------------------------*/
+.greeting-top-block{
+    background-position: center ;
+
+    display: flex;          /*??????????????*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    margin-bottom: 64px;
+}
+.greeting-top-block-text-div{
+    background: rgba(222, 214, 212, 0.7);
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+}
+.greeting-top-block-text-div>h1,p{
+    margin: 0px;            /*??????????????*/
+}
+
+.line{
+    background: black;
+    height: 0.5px;
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*-------------------------------------info-blocks-------------------------------------*/
+.info-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*background: #dbe7ce;*/
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.info-block>img{
+    width: 90%;
+    height: auto;
+}
+
+.i-f-img1{
+    background: url("Images/Houseplants_Accessories_and_More_from_Pistils_Nursery_1000x1000_crop_center.jpg");
+
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.i-f-img2{
+    background: url("Images/Maranta_leuconeura_plants_600x600.webp");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-to-yourplant-block{
+    margin-top: 64px;
+}
+
+.elips-cut1{
+    height: 100%;
+    position: absolute;
+    padding-left: 100px;
+    z-index: 4;
+}
+
+
+.div1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    height: 270px;
+    width: 270px;
+}
+.div2{
+    background: #ffffff;
+    height: 135px;
+    width: 135px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    z-index: 3;
+}
+
+.test{
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+    background: #dfd78a;
+    position: absolute;
+}
+.back-ellips-1{
+    background-image: url("Images/Rectangle 92.png");
+    background-position: center ;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.info-block-text1{
+    margin-left: 38%;
+    margin-top: 24%;
+}
+.info-block-text1>h1{
+    font-size: 2vw;
+}
+.info-block-text1>p{
+    font-size: 20px;
+}
+.info-block-text2{
+     margin-top: 24%;
+ }
+.info-block-text2>h1{
+    font-size: 2vw;
+}
+.info-block-text2>p{
+    font-size: 20px;
+    margin-right: 20%;
+}
+.back-ellips-2{
+    background-image: url("Images/Rectangle 91.png");
+    background-position: center ;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+/*-------------------------------------g-------------------------------------*/
+
+/*-------------------------------------popular-products-block-------------------------------------*/
+.popular-products-block>h1{
+    text-align: center;
+}
+.popular-products-block{
+    margin-bottom: 100px;
+}
+
+.popular-main{
+    display: grid;
+    grid-gap: 39px;
+
+}
+
+.popular-main2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 34px;
+    grid-row-gap: 9px;
+}
+
+
+.popular-products-block img{
+    max-width: 100%;
+    height: auto;
+}
+/*-------------------------------------why-yourplant-block-------------------------------------*/
+.why-yourplant-block{
+    background: #F6F4F3;
+    padding-top: 113px;
+    padding-bottom: 113px;
+    margin-bottom: 64px;
+}
+
+.why-yourplant-block>h1{
+    text-align: center;
+}
+.why-yp-text-div{
+    display: flex;
+}
+.vertical-line{
+    height: inherit;
+    width: 1px;
+    background: black;
+    margin-right: 28px;
+    margin-left: 28px;
+}
+
+/*-------------------------------------to-products-button-block-------------------------------------*/
+
+
+.to-products-button-block{
+    background: #92B765;
+    width: 584px;
+    height: 133px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 64px;
+
+}
+
+.wrapper-button{
+    margin: auto;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+.next{
+    font-size: 50px;
+    margin-left: 17px;
+}
+
+
+/*-------------------------------------media-------------------------------------*/
+@media (min-width:1024px ) {
+    .greeting-top-block {
+        height: 572px;
+        background-image: url("Images/desktop-20200922_Bloomscape_Katie__0055-1-edited-2048x1368.jpg");
+
+    }
+    .greeting-top-block-text-div {
+        margin-top: 84px;
+    }
+
+    .popular-main{
+        grid-template-columns: 50fr 57fr;
+
+    }
+
+    /**/
+    .categories-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 160px;
+        grid-row-gap: 64px;
+        background-image: url("Images/Categories/Rectangle 15.png");
+
+        padding-top: 79px;
+        padding-bottom: 112px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+    .cat-photo>p{
+
+        text-align: center;
+        background: #f6f6f6;
+        color: #878585;
+    }
+    .cat-photo>div{
+        height: 1px;
+        background: #878585;
+    }
+    .categories-block img{
+        max-width: 100%;
+        height: auto;
+
+    }
+    .all-you-need{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding-left: 83px;
+        padding-right: 174px;
+    }
+}
+
+@media (max-width: 1024px){
+    /**/
+    .categories-block{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        padding-top: 79px;
+        padding-bottom: 112px;
+        background: #C5DAE1;
+
+    }
+    .cat-photo>p{
+        background: rgba(246, 246, 246, 0.7);
+        color: #878585;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .cat-photo>div{
+        height: 1px;
+        background: #878585;
+    }
+    .categories-block img{
+        visibility: hidden;
+        position: absolute;
+
+    }
+    .all-you-need{
+        text-align: center;
+        grid-row-start: 1;
+        margin-bottom: 38px;
+        /*grid-column-start: 2;*/
+        /*grid-column-end: 4;*/
+        /*padding-left: 83px;*/
+        /*padding-right: 174px;*/
+    }
+    .cat-photo{
+        color: #878585;
+        height: 200px;
+        margin-bottom: 28px;       /*??????????????*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .cat-photo1{
+        background-image: url("Images/Categories/Aspleniumsp-Bird_sNestFern-pistilsnursery_1312x1696-mobile.jpg");
+    }
+    .cat-photo2{
+        background-image: url("Images/Categories/apothecary-aerium-air-plant-terrarium-pistils-nursery_6cc72a6e-1a58-4ef5-88ae-2d9b3b4ccb7d_1050x1359-mobile.webp");
+    }
+    .cat-photo3{
+        background-image: url("Images/Categories/hand_thrown_ceramic_planter_-_pistils_nursery_1050x1359-mobile.webp");
+
+    }
+    .cat-photo4{
+        background-image: url("Images/Categories/Pumice_-_pistils_nursery-2_1050x1359-mobile.jpg");
+    }
+    /**/
+    .popular-main{
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 750px) {
+    .greeting-top-block {
+        height: 1132px;
+        background-image: url("Images/20200922_Bloomscape_Katie__0055-1-edited-2048x1368.jpg");
+    }
+
+    .greeting-top-block-text-div {
+        margin-top: 298px;
+    }
+
+}
+
+@media (max-width:750px) {
+
+}
+
