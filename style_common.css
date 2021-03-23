@@ -34,6 +34,11 @@ header {
 .company-name{
     font-size: 25px;
     margin-right: 122px;
+
+}
+a{
+    color: #4E6A8F;
+    text-decoration: none;
 }
 .header-links{
     display: flex;
