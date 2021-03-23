@@ -1,32 +1,35 @@
 body{
     font-family: "Raleway";
-    margin:0px;
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 header, footer{
     color: #2E4D7C;
+    background: #A0C2CD;
 }
+/*-------------------------------------header-------------------------------------*/
+
 .company-name:hover{
     cursor: pointer;
 }
-header a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-footer a:hover{
+a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 header {
     display: flex;
-    background: #A0C2CD;
     height: 53px;
     align-items: center;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 100;
 }
-
 .logo{
     font-size: 30px;
     margin-right: 9px;
@@ -34,17 +37,15 @@ header {
 .company-name{
     font-size: 25px;
     margin-right: 122px;
-
 }
-a{
-    color: #4E6A8F;
+header a{
+    color: #2E4D7C;
     text-decoration: none;
 }
 .header-links{
     display: flex;
     font-size: 18px;
 }
-
 .header-links>a{
     margin-right: 23px;
 }
@@ -53,37 +54,32 @@ a{
     font-size: 18px;
 }
 
-
-
 /*-------------------------------------footer-------------------------------------*/
 
 footer{
-    background: #A0C2CD;
     padding-top: 90px;
     padding-bottom: 56px;
-    color: #4E6A8F;
 }
 .ftr-line{
     height: 1px;
     background: #4E6A8F;
-
 }
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
-
 }
 .footer-wrapper>div{
-
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
-
 .space-before{
     height: 64px;
     background: #A0C2CD;
+}
+footer a{
+    color: #2E4D7C;
+    text-decoration: none;
 }
 /*-------------------------------------media-------------------------------------*/
 
@@ -92,19 +88,11 @@ footer{
         padding-left: 250px;
         padding-right: 250px;
     }
-
-    .test{
-        background: red;
-    }
 }
-
 @media (max-width: 1255px) and (min-width: 1024px)  {
     body>*{
         padding-left: 100px;
         padding-right: 100px;
-    }
-    .test{
-        background: #2fff00;
     }
 }
 @media (max-width: 1024px) and (min-width: 750px) {
@@ -112,14 +100,9 @@ footer{
         padding-left: 27px;
         padding-right: 27px;
     }
-    .test{
-        background: #ff00e5;
-    }
+
 }
 @media (max-width:750px) {
-    .test{
-        background: #ffd500;
-    }
     body>*{
         padding-left: 15px;
         padding-right: 15px;
@@ -148,20 +131,8 @@ footer{
     .footer-wrapper{
         flex-direction: column;
         height: 430px;
-
     }
-}
 
 
-.test{
-    position: sticky;
-    top:50px;
-    z-index: 49;
 }
-html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+

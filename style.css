@@ -1,97 +1,49 @@
 
 /*-------------------------------------greeting-top-block-------------------------------------*/
 .greeting-top-block{
-    background-position: center ;
-
-    display: flex;          /*??????????????*/
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
+    display: flex;
     margin-bottom: 64px;
 }
 .greeting-top-block-text-div{
     background: rgba(222, 214, 212, 0.7);
-    /*height: 76px;*/
     height: min-content;
     display: flex;
     flex-direction: column;
 }
 .greeting-top-block-text-div>h1,p{
-    margin: 0px;            /*??????????????*/
+    margin: 0px;
 }
-
 .line{
     background: black;
     height: 0.5px;
     width: 540px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 /*-------------------------------------info-blocks-------------------------------------*/
 .info-block{
     margin-bottom: 40px;
     margin-top: 40px;
-
 }
-
 .info-block>img{
     width: 90%;
     height: auto;
     margin: auto;
 }
-
-.i-f-img1{
-    background: url("Images/Houseplants_Accessories_and_More_from_Pistils_Nursery_1000x1000_crop_center.jpg");
-
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.i-f-img2{
-    background: url("Images/Maranta_leuconeura_plants_600x600.webp");
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .welcome-to-yourplant-block{
     margin-top: 64px;
 }
-
-.elips-cut1{
-    height: 100%;
-    position: absolute;
-    padding-left: 100px;
-    z-index: 4;
+.a{
+    margin-top: 12px;
+    text-decoration: underline;
+    font-size: 18px;
+    color: black;
 }
-
-
-.div1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 1fr;
-    height: 270px;
-    width: 270px;
-}
-.div2{
-    background: #ffffff;
-    height: 135px;
-    width: 135px;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    z-index: 3;
-}
-
-
-
-
-
-/*-------------------------------------g-------------------------------------*/
-
 /*-------------------------------------popular-products-block-------------------------------------*/
 .popular-products-block>h1{
     text-align: center;
@@ -101,13 +53,11 @@
     margin-top: 66px;
     margin-bottom: 100px;
 }
-
 .popular-main{
     display: grid;
     grid-gap: 39px;
 
 }
-
 .popular-main2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,13 +65,10 @@
     grid-column-gap: 34px;
     grid-row-gap: 9px;
 }
-
-
 .popular-products-block img{
     max-width: 100%;
     height: auto;
 }
-
 /*-------------------------------------why-yourplant-block-------------------------------------*/
 .why-yourplant-block{
     padding-top: 113px;
@@ -129,7 +76,6 @@
     background: #F6F4F3;
     margin-bottom: 64px;
 }
-
 .why-yourplant-block>h1{
     text-align: center;
 }
@@ -140,19 +86,16 @@
     margin-bottom: 52px;
     color: #707070;
 }
-
-
-
+.why-yp-text-div h2{
+    text-align: center;
+}
 /*-------------------------------------to-products-button-block-------------------------------------*/
-
-
 .to-products-button-block{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 64px;
 
 }
-
 .wrapper-button{
     background: #92B765;
     margin: auto;
@@ -171,10 +114,6 @@
 
 
 /*-------------------------------------media-------------------------------------*/
-/*-------------------------------------media-------------------------------------*/
-
-
-/*-------------------------------------only laptop-------------------------------------*/
 
 @media (min-width:1025px ) {
     .greeting-top-block {
@@ -190,24 +129,6 @@
         grid-template-columns: 50fr 57fr;
 
     }
-
-    /**/
-    /*.categories-block{*/
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr 1fr 1fr;*/
-    /*    grid-template-rows: 1fr 1fr;*/
-    /*    grid-column-gap: 160px;*/
-    /*    grid-row-gap: 64px;*/
-    /*    background-image: url("Images/Categories/Rectangle 15.png");*/
-
-    /*    padding-top: 79px;*/
-    /*    padding-bottom: 112px;*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-size: cover;*/
-    /*    position: relative;*/
-    /*    background-position: center;*/
-
-    /*}*/
     .cat-photo>p{
 
         text-align: center;
@@ -230,7 +151,6 @@
     }
 }
 
-/*-------------------------------------only planshet-------------------------------------*/
 @media (max-width: 1024px) and (min-width: 750px) {
     .greeting-top-block {
         height: 1132px;
@@ -253,10 +173,14 @@
     .why-yourplant-block h1{
         margin-top: 0px;
     }
+    .categories-block {
+        padding-top: 79px;
+        padding-bottom: 112px;
+    }
+    .info-block h1{
+        font-size: 30px;
+    }
 }
-
-/*-------------------------------------only mobile-------------------------------------*/
-
 @media (max-width:750px) {
     .greeting-top-block {
         height: 505px;
@@ -316,7 +240,11 @@
     .price{
         font-size: 14px;
     }
+    .categories-block{
+        padding-top: 39px;
+        padding-bottom: 39px;
 
+    }
     .why-yp-text-div{
         flex-direction: column;
         text-align: center;
@@ -343,24 +271,20 @@
         padding-bottom: 38px;
     }
     .wrapper-button {
-        width: 90%;
+        width: 98%;
         height: 82px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .next {
         font-size: 40px;
+        margin-left: 2px;
     }
 }
-
-/*-------------------------------------планшет + мобильная-------------------------------------*/
 @media (max-width: 1025px){
     /**/
     .categories-block{
         display: grid;
         grid-template-columns: 1fr;
-
-        padding-top: 79px;
-        padding-bottom: 112px;
         background: #C5DAE1;
 
     }
@@ -389,9 +313,9 @@
     }
     .cat-photo{
         color: #878585;
-        margin-bottom: 28px;       /*??????????????*/
+        margin-bottom: 28px;
         background-repeat: no-repeat;
-        background-size: 100%; /*??????????????*/
+        background-size: 100%;
         position: relative;
         background-position: center;
     }
@@ -408,15 +332,11 @@
     .cat-photo4{
         background-image: url("Images/Categories/Pumice_-_pistils_nursery-2_1050x1359-mobile.jpg");
     }
-    /**/
     .popular-main{
         grid-template-columns: 1fr;
 
     }
 }
-
-/*-------------------------------------планшет + десктоп-------------------------------------*/
-
 @media (min-width: 750px) {
     .info-block {
         display: grid;
@@ -447,7 +367,6 @@
         width: inherit;
         height: inherit;
     }
-
     .info-block-text1{
         margin-left: 38%;
         margin-top: 21%;
@@ -492,9 +411,6 @@
         width: 33%;
     }
 }
-
-/*for categorie's sake*/
-
 @media (min-width: 1441px) {
     .categories-block{
         display: grid;
@@ -516,10 +432,13 @@
         padding-left: 83px;
         padding-right: 174px;
     }
+
 }
 
 @media (max-width: 1441px) and (min-width: 1024px)  {
     .categories-block{
+        padding-top: 79px;
+        padding-bottom: 112px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -527,8 +446,6 @@
         grid-row-gap: 44px;
         background-image: url("Images/Categories/Rectangle 15.png");
 
-        padding-top: 79px;
-        padding-bottom: 112px;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
