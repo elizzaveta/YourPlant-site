@@ -2,8 +2,6 @@
 
 .wrapper{
     display: grid;
-    margin-top: 54px;
-    margin-bottom: 54px;
 }
 /*-------------------------------------wrapper-------------------------------------*/
 .page-image{
@@ -96,6 +94,13 @@ h1{
         margin-bottom: 24px;
     }
 }
+
+@media (min-width: 750px) {
+    .wrapper {
+        margin-top: 54px;
+        margin-bottom: 54px;
+    }
+}
 @media (max-width:750px) {
     .wrapper{
         grid-gap: 14px;
@@ -116,7 +121,16 @@ h1{
     .add-to-cart {
         width: 100%;
     }
-
+    .wrapper {
+        margin-top: 23px;
+        margin-bottom: 23px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .price{
+        font-size: 18px;
+    }
 }
 
 

@@ -15,14 +15,16 @@ img{
 h2{
     background: #EEF4F6;
     margin: 0px;
-    font-size: 18px;
+    font-size: 20px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
+.price{
+    font-size: 14px;
+}
 
 .products > div{
     width: 100%;
@@ -45,6 +47,7 @@ margin-left: auto;
     padding-bottom: 22px;
     margin-bottom: 51px;
  }
+
 
 
 /*-------------------------------------media-------------------------------------*/

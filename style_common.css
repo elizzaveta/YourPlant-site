@@ -6,12 +6,25 @@ body{
 header, footer{
     color: #2E4D7C;
 }
-
+.company-name:hover{
+    cursor: pointer;
+}
+header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 header {
     display: flex;
     background: #A0C2CD;
     height: 53px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
 
 .logo{
@@ -24,6 +37,7 @@ header {
 }
 .header-links{
     display: flex;
+    font-size: 18px;
 }
 
 .header-links>a{
@@ -31,6 +45,7 @@ header {
 }
 .header-cart{
     margin-left: auto;
+    font-size: 18px;
 }
 
 
@@ -46,9 +61,6 @@ footer{
 .ftr-line{
     height: 1px;
     background: #4E6A8F;
-    margin-bottom: 42px;
-    padding-left: 0px;
-    padding-right: 0px;
 
 }
 .footer-wrapper{
@@ -63,25 +75,31 @@ footer{
     text-align: center;
 }
 
-footer>div{
 
+.space-before{
+    height: 64px;
+    background: #A0C2CD;
 }
+/*-------------------------------------media-------------------------------------*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1255px) {
     body>*{
         padding-left: 250px;
         padding-right: 250px;
     }
-    .ftr-line{
-        padding-left: 0px;
-        padding-right: 0px;
 
+    .test{
+        background: red;
     }
 }
-@media (min-width: 1024px) and (max-width: 1200px){
+
+@media (max-width: 1255px) and (min-width: 1024px)  {
     body>*{
         padding-left: 100px;
         padding-right: 100px;
+    }
+    .test{
+        background: #2fff00;
     }
 }
 @media (max-width: 1024px) and (min-width: 750px) {
@@ -89,10 +107,56 @@ footer>div{
         padding-left: 27px;
         padding-right: 27px;
     }
+    .test{
+        background: #ff00e5;
+    }
 }
 @media (max-width:750px) {
+    .test{
+        background: #ffd500;
+    }
     body>*{
         padding-left: 15px;
         padding-right: 15px;
     }
+    .menu{
+        height: 25px;
+        width: 29px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: auto;
+    }
+    .menu>div{
+        height: 5px;
+        width: inherit;
+        background: #4E6A8F;
+    }
+    .header-links{
+        visibility: hidden;
+        position: absolute;
+    }
+    .header-cart{
+        visibility: hidden;
+        position: absolute;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+        height: 430px;
+
+    }
+}
+
+
+.test{
+    position: sticky;
+    top:50px;
+    z-index: 49;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
